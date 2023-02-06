@@ -1,10 +1,4 @@
-/*
 
-TemplateMo 569 Edu Meeting
-
-https://templatemo.com/tm-569-edu-meeting
-
-*/
 
 /* ---------------------------------------------
 Table of contents
@@ -114,8 +108,8 @@ p {
 }
 
 img {
-  width: 100%;
   overflow: hidden;
+  width: 100%;
 }
 
 /* 
@@ -158,7 +152,7 @@ body {
 .main-button-red a {
   font-size: 13px;
   color: #fff;
-  background-color: #a12c2f;
+  background-color: #3b70e2;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 22px;
@@ -714,7 +708,7 @@ banner
 
 .main-banner .caption {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
 }
 
@@ -764,8 +758,36 @@ banner
   }
 
 }
+@media (max-width: 570px){ 
+  .main-button-red a {
+    display: none;
+   }
+   .main-banner .caption p {
+    font-size: 10px;
+   }
+   .main-banner .caption h2 { 
+    font-size: 15px;
+    font-weight: 500;
+    }
+    .main-banner .caption {
+      padding-top: 50px;
+    }
+    p {
+      line-height: 15px;
+    }
+  }
 
-
+  @media (max-width: 387px) {
+    .main-banner .caption h2 {
+      display: none;
+    }
+  }
+  @media (max-width: 340px) {
+    .main-banner .caption h6 {
+      margin-top: 19px;
+    }
+  }
+  
 /*
 ---------------------------------------------
 services
@@ -990,7 +1012,7 @@ section.upcoming-meetings .categories .main-button-red a {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #a12c2f;
+  color: #3b70e2;
 }
 
 .meeting-item .down-content .date span {
@@ -1143,7 +1165,7 @@ section.our-courses {
 }
 
 .our-courses .item .down-content .info span {
-  color: #a12c2f;
+  color: #3b70e2;
   font-size: 15px;
   font-weight: 600;
   text-align: right;
@@ -1330,13 +1352,13 @@ section.contact-us {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 140px 0px 0px 0px;
+  padding: 40px 0px 0px 0px;
 }
 
 section.contact-us #contact {
   background-color: #fff;
   border-radius: 20px;
-  padding: 40px;
+  padding: 62px;
 }
 
 section.contact-us #contact h2 {
@@ -1383,7 +1405,7 @@ section.contact-us #contact textarea {
 section.contact-us #contact button {
   font-size: 13px;
   color: #fff;
-  background-color: #a12c2f;
+  background-color: #3b70e2;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 22px;
@@ -1399,7 +1421,7 @@ section.contact-us #contact button:hover {
 }
 
 section.contact-us .right-info {
-  background-color: #a12c2f;
+  background-color: #3b70e2;
   border-radius: 20px;
   padding: 40px;
 }
@@ -1407,8 +1429,8 @@ section.contact-us .right-info {
 section.contact-us .right-info ul li {
   display: inline-block;
   border-bottom: 1px solid rgba(250,250,250,0.15);
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 section.contact-us .right-info ul li:last-child {
@@ -1419,14 +1441,14 @@ section.contact-us .right-info ul li:last-child {
 
 section.contact-us .right-info ul li h6 {
   color: #fff;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 section.contact-us .right-info ul li span {
   display: block;
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   font-weight: 700;
 }
@@ -1507,7 +1529,7 @@ section.meetings-page .filters {
 
 section.meetings-page .filters li {
   font-size: 13px;
-  color: #a12c2f;
+  color: #3b70e2;
   background-color: #fff;
   padding: 11px 30px;
   display: inline-block;
@@ -1521,7 +1543,7 @@ section.meetings-page .filters li {
 
 section.meetings-page .filters ul li.active,
 section.meetings-page .filters ul li:hover {
-  background-color: #a12c2f;
+  background-color: #3b70e2;
   color: #fff;
 }
 
@@ -1562,7 +1584,7 @@ section.meetings-page .main-button-red a {
 
 section.meetings-page .pagination ul li.active a,
 section.meetings-page .pagination ul li a:hover {
-  background-color: #a12c2f;
+  background-color: #3b70e2;
   color: #fff;
 }
 
@@ -1613,7 +1635,7 @@ section.meetings-page .pagination ul li a:hover {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #a12c2f;
+  color: #3b70e2;
 }
 
 .meeting-single-item .thumb .date span {
