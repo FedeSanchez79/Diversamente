@@ -581,7 +581,6 @@ header
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
-    text-align: center;
   }
   .header-area .container {
     padding: 0px;
@@ -1483,7 +1482,7 @@ section.heading-page {
   background-size: cover;
   padding-top: 230px;
   padding-bottom: 110px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 section.heading-page h6 {
@@ -1505,6 +1504,39 @@ section.heading-page h2 {
   letter-spacing: 1px;
 }
 
+/*
+---------------------------------------------
+heading page2
+---------------------------------------------
+*/
+
+section.heading-page2 {
+  background-image: url(../images/shutterstock_357105203.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 230px;
+  padding-bottom: 110px;
+}
+
+section.heading-page2 h6 {
+  margin-top: 0px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+section.heading-page2 h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+}
 
 /*
 ---------------------------------------------
