@@ -1467,6 +1467,10 @@ section.contact-us .right-info ul li span {
   color: #f5a425;
 }
 
+#blank {
+  opacity: 0;
+  background-image:url(../images/meetings-bg.jpg);
+}
 
 /*
 ---------------------------------------------
