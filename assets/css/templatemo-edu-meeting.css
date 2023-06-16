@@ -342,6 +342,44 @@ header
   letter-spacing: 1px;
 }
 
+.header-area .main-nav .nav .donar a {
+  background: #3b70e2; /* color de fondo */
+  color: #fff; /* color de fuente */
+  border: 2px solid #3b70e2; /* tamaño y color de borde */
+  padding: 0px 20px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.header-area .main-nav .nav .donar a:hover {
+  color: #fff; /* color de fuente hover */
+}
+.header-area .main-nav .nav .donar a::after {
+  content: "";
+  background: #3b70e2; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: -100%;
+  bottom: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.header-area .main-nav .nav .donar a:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
   color: #f5a425!important;
@@ -904,136 +942,74 @@ services
 
 /*
 ---------------------------------------------
-upcoming meetings
+DisfrutARTE
 ---------------------------------------------
 */
 
-section.upcoming-meetings {
-  background-image: url(../images/meetings-bg.jpg);
+.contenedor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../images/El-cambio-de-paradigma-de-la-discapacidad-del-modelo-médico-al-modelo-social.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 230px;
-  padding-bottom: 110px;
 }
-
-section.upcoming-meetings .section-heading {
-  text-align: center;
+.contenedor figure{
+ position:relative;
+  height: 250px;
+  cursor: pointer;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
-
-section.upcoming-meetings .categories {
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 40px;
-  margin-right: 45px;
-}
-
-section.upcoming-meetings .categories h4 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #1f272b;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-section.upcoming-meetings .categories ul li {
-  display: inline-block;
-  margin-bottom: 15px;
-}
-
-section.upcoming-meetings .categories ul li a {
-  font-size: 15px;
-  color: #1f272b;
-  font-weight: 500;
-  transition: all .3s;
-}
-
-section.upcoming-meetings .categories ul li a:hover {
-  color: #a12c2f;
-}
-
-section.upcoming-meetings .categories .main-button-red {
-  border-top: 1px solid #eee;
-  padding-top: 30px;
-  margin-top: 15px;
-}
-
-section.upcoming-meetings .categories .main-button-red a {
+.contenedor figure img{
   width: 100%;
-  text-align: center;
+  height: 100%;
+  transition: all 400ms ease-out;
+  will-change: transform;
 }
-
-.meeting-item {
-  margin-bottom: 30px;
-}
-
-.meeting-item .thumb {
-  position: relative;
-}
-
-.meeting-item .thumb img {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-
-.meeting-item .thumb .price {
+.contenedor figure .capa{
   position: absolute;
-  left: 20px;
-  top: 20px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,103,123,0.7);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+ text-align: center;
 }
-
-.meeting-item .thumb .price span {
-  font-size: 16px;
-  color: #1f272b;
-  font-weight: 600;
-  background-color: rgba(250,250,250,0.9);
-  padding: 7px 12px;
-  border-radius: 10px;
+.contenedor figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
 }
-
-.meeting-item .down-content {
-  background-color: #fff;
-  padding: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.meeting-item .down-content .date {
-  float: left;
-  text-align: center;
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.meeting-item .down-content .date h6 {
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #3b70e2;
-}
-
-.meeting-item .down-content .date span {
-  display: block;
-  color: #1f272b;
-  font-size: 22px;
-  margin-top: 7px;
-}
-
-.meeting-item .down-content h4 {
-  font-size: 18px;
-  color: #1f272b;
-  font-weight: 600;
-  display: inline-block;
+.contenedor figure:hover > .capa h3{
+  margin-top: 70px;
   margin-bottom: 15px;
 }
-
-.meeting-item .down-content p {
-  color: #1f272b;
-  font-size: 14px;
+.contenedor figure:hover > img{
+  transform: scale(1.3);
 }
-
+.contenedor figure .capa h3{
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+   margin-top: 30px;
+}
+.contenedor figure .capa p{
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
 
 
 /*
