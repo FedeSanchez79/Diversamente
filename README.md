@@ -8,5 +8,5 @@ En la misma podemos observar 3 secciones:
 2 - Nosotros
 3 - Blog
 
-El diseño esta realizado a traves de plantillas de Bootstrap, personañizadas. En las mismas se observa una paleta de colores definida, imagenes de background acorde a los temas tratados.
+El diseño esta realizado a traves de plantillas de Bootstrap, personalizadas. En las mismas se observa una paleta de colores definida, imagenes de background acorde a los temas tratados.
 
